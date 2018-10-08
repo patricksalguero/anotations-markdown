@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Iniciando con Angular",
+    "tags": ["angular4+","angular cli", "nodejs", "javascript", "typescript"],
+    "filename": "angular-init.md",
+    "description": "Iniciando con un proyecto con angular CLI",
+    "image_url": "https://s3.amazonaws.com/media-p.slid.es/uploads/667163/images/3574763/angular-logo-534x441.png",
+    "author": "Patrick S",
+    "language": "TS"
+  },
+  {
+    "name": "Iniciando con GIT",
+    "tags": ["versionamiento","git", "bitbucket", "github", "opensource"],
+    "filename": "git-init.md",
+    "description": "Iniciando con un proyecto con GIT",
+    "image_url": "http://www.jasoft.org/Blog/image.axd?picture=git-logo.png",
+    "author": "Patrick S",
+    "language": "JS"
+  }
+]
