@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class AnotationsService {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
+
+  getAnotations() {
+    return this.http.get('../../../data/anotations.json');
+  }
 }

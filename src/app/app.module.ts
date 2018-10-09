@@ -10,6 +10,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { RepositoriesComponent } from "./components/repositories/repositories.component";
 import { HomeComponent } from "./components/home/home.component";
+import { RepositoriesService } from './services/repositories.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,10 @@ import { HomeComponent } from "./components/home/home.component";
       }
     })
   ],
-  providers: [AnotationsService],
+  providers: [
+    AnotationsService,
+    RepositoriesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

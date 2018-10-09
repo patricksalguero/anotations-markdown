@@ -36,19 +36,18 @@
 </section> -->
 
 <section class="section--center mdl-grid site-max-width">
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let a of anotations">
     <div class="mdl-card__media">
-      <img class="article-image" src="./assets/img/portfolio1.jpg" border="0" alt="">
+      <img class="article-image" [src]="a.image_url" border="0" alt="" style="max-height: 240px;">
     </div>
     <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Rocky Peak</h2>
+      <h2 class="mdl-card__title-text">{{a.name}}</h2>
     </div>
     <div class="mdl-card__supporting-text">
-      Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim
-      nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+      {{a.description}}
     </div>
   </div>
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <!-- <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
     <div class="mdl-card__media">
       <img class="article-image" src="assets/img/portfolio2.jpg" border="0" alt="">
     </div>
@@ -71,7 +70,7 @@
       Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim
       nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
     </div>
-  </div>
+  </div> -->
 </section>
 
 <section class="section--center mdl-grid site-max-width homepage-portfolio">
@@ -82,45 +81,35 @@
   <section class="mdl-grid site-max-width">
     <div class="mdl-cell mdl-card mdl-cell--8-col mdl-cell--4-col-tablet  mdl-shadow--4dp portfolio-card">
       <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">Repositorios</h2>
+        <h2 class="mdl-card__title-text">Repositorios recientes!</h2>
+      </div><br>
+      <div class="repositories" style="min-height: 200px;max-height: 200px; overflow-y: scroll;">
+        <ul class="demo-list-three mdl-list">
+          <li class="mdl-list__item mdl-list__item--three-line" *ngFor="let r of repositories" >
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">code</i>
+              <a target="_blanck" [href]="r.html_url" style="text-decoration: none;"><span>{{r.full_name}}</span></a>
+              <span class="mdl-list__item-text-body">
+                Lenguaje: {{(r.language)? r.language : 'Sin lenguaje'}} <span style="float: right">{{r.updated_at | date:'short'}}</span>
+              </span>
+            </span>
+          </li>
+        </ul>
       </div>
-      <ul class="demo-list-three mdl-list">
-        <li class="mdl-list__item mdl-list__item--three-line">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-avatar">person</i>
-            <span>Amazing people, always ready to help!</span>
-            <span class="mdl-list__item-text-body">
-              Bryan Cranston, CEO, Amazing.com
-            </span>
-          </span>
-        </li>
-        <li class="mdl-list__item mdl-list__item--three-line">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons  mdl-list__item-avatar">person</i>
-            <span>Awesome work, they can do almost anything..</span>
-            <span class="mdl-list__item-text-body">
-              Aaron Paul, Marketing Lead, Awesome.com
-            </span>
-          </span>
-        </li>
-      </ul>
     </div>
     <div class="demo-card-event mdl-cell mdl-card mdl-shadow--4dp event-card portfolio-card">
       <div class="mdl-card__title mdl-card--expand">
-        <h4>
-          Featured event:<br>
-          Community Meetup
-          May 24, 2018<br>
-          7-11pm
-        </h4>
+        <h6>
+          "Los ordenadores se hacen cada vez más inteligentes. Los científicos dicen que pronto ellos serán capaces de hablarnos (y con 'ellos' me refiero a los ordenadores, dudo mucho que los científicos sean capaces de hablarnos)"
+        </h6>
       </div>
-      <div class="mdl-card__actions mdl-card--border">
+      <!-- <div class="mdl-card__actions mdl-card--border">
         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
           Add to Calendar
         </a>
         <div class="mdl-layout-spacer"></div>
         <i class="material-icons">event</i>
-      </div>
+      </div> -->
     </div>
   </section>
 </div>

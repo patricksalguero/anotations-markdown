@@ -3,8 +3,8 @@
     "name": "Iniciando con Angular",
     "tags": ["angular4+","angular cli", "nodejs", "javascript", "typescript"],
     "filename": "angular-init.md",
-    "description": "Iniciando con un proyecto con angular CLI",
-    "image_url": "https://s3.amazonaws.com/media-p.slid.es/uploads/667163/images/3574763/angular-logo-534x441.png",
+    "description": "Iniciando con un proyecto con angular CLI , utilizando el cliente de angular para crear un proyecto con Angular 4+",
+    "image_url": "https://angular-school-deploy.s3.amazonaws.com/images/the_A_gif-1c1149415fb6c5d83c38989f169d7630.gif",
     "author": "Patrick S",
     "language": "TS"
   },
@@ -12,8 +12,17 @@
     "name": "Iniciando con GIT",
     "tags": ["versionamiento","git", "bitbucket", "github", "opensource"],
     "filename": "git-init.md",
-    "description": "Iniciando con un proyecto con GIT",
+    "description": "Iniciando con un proyecto con GIT aprendiendo cual es el ciclo de desarrollo utilizando GIT como herramienta de versionamiento.",
     "image_url": "http://www.jasoft.org/Blog/image.axd?picture=git-logo.png",
+    "author": "Patrick S",
+    "language": "JS"
+  },
+  {
+    "name": "Configurando web con Nginx",
+    "tags": ["deploy","nginx", "bitbucket", "github", "opensource"],
+    "filename": "nginx-init.md",
+    "description": "Configurando un proyecto NODE JS utilizando NGINX como proxy inverso permitira redenrizar una web application..",
+    "image_url": "https://yt3.ggpht.com/a-/AN66SAyGzKQ-6AxvJ0TCTk1yIGINCZn1hJwqdMbsBQ=s900-mo-c-c0xffffffff-rj-k-no",
     "author": "Patrick S",
     "language": "JS"
   }
