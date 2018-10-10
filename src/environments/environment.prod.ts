@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  anotation_path_markdown: '../data/anotations.json'
 };
