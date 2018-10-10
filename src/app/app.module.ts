@@ -11,6 +11,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { RepositoriesComponent } from "./components/repositories/repositories.component";
 import { HomeComponent } from "./components/home/home.component";
 import { RepositoriesService } from './services/repositories.service';
+import { AnotationComponent } from './components/anotation/anotation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RepositoriesService } from './services/repositories.service';
     HeaderComponent,
     FooterComponent,
     RepositoriesComponent,
-    HomeComponent
+    HomeComponent,
+    AnotationComponent
   ],
   imports: [
     BrowserModule,
