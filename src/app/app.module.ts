@@ -12,6 +12,7 @@ import { RepositoriesComponent } from "./components/repositories/repositories.co
 import { HomeComponent } from "./components/home/home.component";
 import { RepositoriesService } from './services/repositories.service';
 import { AnotationComponent } from './components/anotation/anotation.component';
+import { APP_ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AnotationComponent } from './components/anotation/anotation.component';
           smartypants: false
         }
       }
-    })
+    }),
+    APP_ROUTES
   ],
   providers: [
     AnotationsService,
