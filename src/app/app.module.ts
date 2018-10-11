@@ -13,6 +13,9 @@ import { HomeComponent } from "./components/home/home.component";
 import { RepositoriesService } from './services/repositories.service';
 import { AnotationComponent } from './components/anotation/anotation.component';
 import { APP_ROUTES } from './app.routes';
+import { AnotationsComponent } from './components/anotations/anotations.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { APP_ROUTES } from './app.routes';
     FooterComponent,
     RepositoriesComponent,
     HomeComponent,
-    AnotationComponent
+    AnotationComponent,
+    AnotationsComponent,
+    AboutmeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
