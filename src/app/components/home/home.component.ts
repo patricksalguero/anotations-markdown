@@ -1,3 +1,4 @@
+import { Person } from './../../interfaces/Person';
 import { Component, OnInit } from '@angular/core';
 import { AnotationsService } from '../../services/anotations.service';
 import { RepositoriesService } from 'src/app/services/repositories.service';
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.getAllAnotations();
     this.getAllRepositories();
+    this.getPErson();
   }
 
   getAllAnotations() {
@@ -36,5 +38,12 @@ export class HomeComponent implements OnInit {
         console.log(repositories);
         this.repositories = repositories;
       });
+  }
+
+  getPErson() {
+    const person: Person = new Person("Leonel", "Cortijo2");
+
+    console.log(this._anotation.savePerson(person));
+    console.log(JSON.stringify(this._anotation.savePerson(person)));
   }
 }
